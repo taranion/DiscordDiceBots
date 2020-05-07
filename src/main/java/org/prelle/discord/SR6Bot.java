@@ -38,7 +38,7 @@ public class SR6Bot extends ListenerAdapter  {
 	private static JDABuilder jdaBuilder;
 	
 	static {
-		jdaBuilder = JDABuilder.createLight("NzA3NjkxNzgzODE5MzYyMzc2.XrMlKA.S-7PZCMUsKsnN6LAzBfQO-17F9w", 
+		jdaBuilder = JDABuilder.createLight("<token>", 
 				GatewayIntent.DIRECT_MESSAGES, 
 				GatewayIntent.DIRECT_MESSAGE_TYPING,
 				GatewayIntent.DIRECT_MESSAGE_REACTIONS,
@@ -54,9 +54,6 @@ public class SR6Bot extends ListenerAdapter  {
 	        // we would use AccountType.CLIENT
 	        try
 	        {
-//	            JDA jda = new JDABuilder("NzA2OTg0NDUzOTU1NjQ5NTQ3.XrCOjg.rcKSDCzhCvc1vXw044Cs94Qk5zA")         // The token of the account that is logging in.
-//	                    .addEventListeners(new TestBot())  // An instance of a class that will handle events.
-//	                    .build();
 	        	JDA jda = jdaBuilder
 	        			.build();
 	        	jda.addEventListener(this);

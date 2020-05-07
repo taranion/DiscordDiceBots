@@ -29,7 +29,7 @@ public class SpliMoBot extends ListenerAdapter  {
 	private static JDABuilder jdaBuilder;
 	
 	static {
-		jdaBuilder = JDABuilder.createLight("NzA3OTk1OTczMTQ1NTkxODc5.XrQ6_Q.C9MS1wn-Oq3xaDWLeCXPiIPYHQg", 
+		jdaBuilder = JDABuilder.createLight("<token>", 
 				GatewayIntent.DIRECT_MESSAGES, 
 				GatewayIntent.DIRECT_MESSAGE_TYPING,
 				GatewayIntent.DIRECT_MESSAGE_REACTIONS,
@@ -164,6 +164,9 @@ public class SpliMoBot extends ListenerAdapter  {
 	            	.embed(embed.build())
 	            	.queue();
 
+	            /*
+	             * Add reactions
+	             */
 	        }
 	    }
 }
